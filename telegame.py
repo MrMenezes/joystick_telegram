@@ -39,7 +39,7 @@ class Telegame(telepot.Bot):
                 else:
                     self.default(msg)
         else:
-            print("LOG" + msg)
+            print("LOG" + str(msg))
     def start(self):
         self.message_loop(self.__handle)
 
